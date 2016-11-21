@@ -1,0 +1,17 @@
+<div class="container product-list-container">
+  <div class="row">
+      <div class="col-sm-4 col-lg-2 col-md-3" ng-repeat="product in $ctrl.products">
+          <div class="thumbnail product-container">
+              <img ng-src="{{product.imageUrl}}" alt="{{product.name}}">
+              <div class="caption">
+                  <h5><a href="#!/products/{{product.id}}">{{product.name}}</a></h5>
+                  <h5>{{product.price | currency}}</h5>
+              </div>
+              <div class="btn-container text-right" ng-if="product.qty">
+                  <span class="glyphicon" ng-class="{ 'glyphicon-shopping-cart': !product.added, 'glyphicon-remove': product.added }" ng-click="$ctrl.updateShoppingCart(product)"></span>
+              </div>
+              <div class="bg-danger txt-outofstock" ng-if="!product.qty">Out of Stock</div>
+          </div>
+      </div>
+  </div>
+</div>

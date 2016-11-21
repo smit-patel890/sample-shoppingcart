@@ -1,0 +1,95 @@
+/**
+For some reason compass was NOT working in my system so have put css directly in css file by compiling below scss using online tool
+*/
+body {
+  padding: 20px;
+}
+
+.view-container {
+  margin-top: 6rem;
+}
+
+.product-list-container {
+    .product-container {
+        padding: 0;
+        .caption {
+            overflow: hidden;
+            padding: 0.5rem; 
+            h5 {
+                white-space: nowrap;
+            }
+        }
+        img {
+            height: 18rem;
+            width: 100%;
+            padding: 1rem;
+        }
+        .btn-container {
+            padding: 0.5rem;
+            span {
+                font-size: 2.5rem;
+                cursor: pointer;
+            }
+        }
+        .txt-outofstock {
+            padding: 0.9rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.product-detail-container {
+    .btn-addtocart {
+      width: 85%;
+    }
+    img {
+      height: 300px;
+      padding: 2em;
+      width: 300px;
+    }
+    .txt-outofstock {
+        width: 85%;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #f2dede;
+        text-align: center;
+    }
+    .product-desc {
+      padding-top: 2rem;
+    }
+    h1 {
+      padding-top: 2rem;
+    }
+}
+
+
+.cart-container {
+  width: 50%;
+  .row {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      border: 1px solid gray;
+      img {
+            width: 5rem;
+            height: 5rem;
+            margin-top: 0.5rem;
+        }
+        input[type=number] {
+            width: 4rem;
+            margin-left: 0.5rem;
+        }
+        .delete-icon {
+          margin-top: 1rem;
+          cursor: pointer;
+        }
+    }
+}
+
+.header-cart {
+    font-size: 3rem;
+    padding-top: 1rem;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+}

@@ -1,0 +1,39 @@
+<div class="container cart-container">
+  <h1>Your Cart</h1>
+
+  <div ng-if="!$ctrl.selectedProducts.length">
+    <h2>Your Shopping Cart is Empty!</h2>
+    <a href="/" class="btn btn-success btn-lg" role="button">Start Shopping</a>
+  </div>
+  
+  <div ng-if="$ctrl.selectedProducts.length">
+    <div class="row" ng-repeat="product in $ctrl.selectedProducts">
+      <div class="col-md-2">
+        <img ng-src="{{product.imageUrl}}" />
+      </div>
+      <div class="col-md-6">
+        <h4 ng-bind="product.name"></h4>
+        <h6 ng-bind="product.price | currency"></h6>
+      </div>
+      <div class="col-md-2">
+        <h4 ng-bind="product.price * product.qty | currency"></h4>
+      </div>
+      <div class="col-md-2">
+        Qty
+        <input type="number" name="quantity" min="1" ng-model="product.qty" ng-change="$ctrl.updateTotalAmount()">
+        <div class="delete-icon" ng-click="$ctrl.removeItem(product)">
+          <span class="glyphicon glyphicon-trash"></span>
+          Remove
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="col-md-8 text-right"><h4>Total</h4></div>
+      <div class="col-md-4"><h4 ng-bind="$ctrl.totalAmount | currency"></h4></div>
+    </div>
+    <div class="text-right">
+      <a href="/" class="btn btn-success btn-lg" role="button">Continue Shopping</a>
+      <a href="/#!checkout" class="btn btn-success btn-lg" role="button">Check Out</a>
+    </div>
+  </div>
+</div>

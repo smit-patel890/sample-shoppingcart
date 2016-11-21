@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="sampleShoppingCartApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Sample Shopping Cart App</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="common/common.module.js"></script>
+    <script src="common/shopping-cart/shopping-cart.module.js"></script>
+    <script src="common/shopping-cart/shopping-cart.service.js"></script>
+    <script src="product-list/product-list.module.js"></script>
+    <script src="product-list/product-list.component.js"></script>
+    <script src="product-detail/product-detail.module.js"></script>
+    <script src="product-detail/product-detail.component.js"></script>
+    <script src="shopping-cart/shopping-cart.module.js"></script>
+    <script src="shopping-cart/shopping-cart.component.js"></script>
+    <script src="main-header/main-header.component.js"></script>
+  </head>
+  <body>
+
+    <main-header></main-header>
+    <div ng-view class="view-container"></div>
+
+  </body>
+</html>

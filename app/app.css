@@ -1,0 +1,102 @@
+body {
+  padding: 20px;
+}
+
+.view-container {
+  margin-top: 6rem;
+}
+
+.product-list-container .product-container {
+  padding: 0;
+}
+
+.product-list-container .product-container .caption {
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.product-list-container .product-container .caption h5 {
+  white-space: nowrap;
+}
+
+.product-list-container .product-container img {
+  height: 18rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.product-list-container .product-container .btn-container {
+  padding: 0.5rem;
+}
+
+.product-list-container .product-container .btn-container span {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.product-list-container .product-container .txt-outofstock {
+  padding: 0.9rem;
+  font-weight: bold;
+}
+
+.product-detail-container .btn-addtocart {
+  width: 85%;
+}
+
+.product-detail-container img {
+  height: 300px;
+  padding: 2em;
+  width: 300px;
+}
+
+.product-detail-container .txt-outofstock {
+  width: 85%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #f2dede;
+  text-align: center;
+}
+
+.product-detail-container .product-desc {
+  padding-top: 2rem;
+}
+
+.product-detail-container h1 {
+  padding-top: 2rem;
+}
+
+.cart-container {
+  width: 50%;
+}
+
+.cart-container .row {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.cart-container .row img {
+  width: 5rem;
+  height: 5rem;
+  margin-top: 0.5rem;
+}
+
+.cart-container .row input[type=number] {
+  width: 4rem;
+  margin-left: 0.5rem;
+}
+
+.cart-container .row .delete-icon {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.header-cart {
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+
+.header-cart a {
+  color: #fff;
+  text-decoration: none;
+}

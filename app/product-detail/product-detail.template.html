@@ -1,0 +1,15 @@
+<div class="container product-detail-container">
+    <div class="row">
+      <div class="col-md-4">
+        <img ng-src="{{$ctrl.product.imageUrl}}" />
+        <button type="button" ng-if="$ctrl.product.qty" class="btn btn-lg btn-addtocart {{$ctrl.product.added ? 'btn-danger' : 'btn-success'}}" ng-click="$ctrl.updateShoppingCart($ctrl.product)">{{ ($ctrl.product.added ? 'Remove From ' : 'Add To ') + 'Cart'}}
+        </button>
+        <p class="bg-danger txt-outofstock" ng-if="!$ctrl.product.qty">Out of Stock</p>
+      </div>
+      <div class="col-md-8">
+        <h1>{{$ctrl.product.name}}</h1>
+        <h4>{{$ctrl.product.price | currency}}</h4>
+        <p class="product-desc">{{$ctrl.product.description}}</p>
+      </div>
+    </div>
+</div>
